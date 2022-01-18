@@ -2,4 +2,4 @@
   {{title}}
 </h1>
 <p>{{name}}</p>
-<app-home></app-home>
+<app-home [alpha] = "alpha" (onYell) = "yell($event)"></app-home>

@@ -1,1 +1,17 @@
-<p>home works!</p>
+<p>{{homeTitle}}</p>
+
+<!-- // An example of data being sent to views (Property Binding)-->
+<input [value]="myString">
+
+<!-- // An example of data being sent to views (Event Binding) -->
+<button (click)="alertMe()">Click</button>
+
+ <!-- 2 way data binding -->
+<input [(ngModel)] = "ninja.name"/>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
+
+<p>{{alpha.name}}</p>
+<p>{{alpha.belt}}</p>
+
+<button (click)= "yell($event)">Hit Me</button>

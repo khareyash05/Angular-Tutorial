@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +8,11 @@ import { HomeComponent } from './home/home.component';
 export class AppComponent {
   title = 'angularbegin';
   name = 'Angular';
+  alpha = {
+    name: 'App',
+    belt: 'brown',
+  }
+  yell(e : any) {
+    alert("Yelling");
+  }
 }
